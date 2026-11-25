@@ -3,67 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title></title>
 </head>
-<body>
-    <main>
-        <section>
-        <h1>To-do list</h1>
-        <form action="" id="form">
+<body class="bg-[url('./checkers.jpeg')] bg-cover bg-center flex justify-center mt-50">
+    <main class="">
+        <section class="h-180 w-120 bg-white/20 backdrop-blur-lg shadow-lg rounded-2xl ">
+        <h1 class="text-4xl font-bold text-center py-4">To-do list</h1>
+        <form action="" id="form" class="mt-10 text-center ">
 
-            <label for="">Name</label>
-            <input type="text"><br>
+            <div class="pb-3">
+                <label for="">Name</label>
+            <input type="text" class=" ml-4 border-b focus:border-b-2 focus:outline-none"><br>
             <br>
+            </div>
 
             <label for="">Date</label>
-            <input type="date"><br><br>
+            <input type="date" class="rounded-lg"><br><br>
 
             <label for="">Select priority</label>
-            <select name="" id="priority">
+            <select name="" id="priority" class="border-0 focus:border-b-2 focus:outline-none">
                 <option value="" select disabled>Select priority</option>
                 <option value="">Low</option>
                 <option value="">Medium</option>
                 <option value="">High</option>
             </select><br><br>
 
-            <button type="submit">Add</button>
+            <button type="submit" class="bg-red-100 h-10 w-40 rounded-2xl">Add</button>
             
 
-            <h3>Task List</h3>
-            <ul>
+            <h3 class="mt-6 mb-4 text-2xl font-semibold ">Task List</h3>
+            <ul >
                 <li>
                     
-                        <input type="checkbox" id="walk">
+                        <input type="checkbox" id="walk" class="appearance-none size-4 rounded bg-gray-200 checked:bg-black">
                         <label>Take a walk</label>
                     
                 </li>
                 <li>
-                    <input type="checkbox" id="icecream">
+                    <input type="checkbox" id="icecream" class="appearance-none size-4 rounded bg-gray-200 checked:bg-black">
                     <label>Go for icecream</label>
                 </li>    
 
                 <li>
-                    <input type="checkbox" id="nap">
+                    <input type="checkbox" id="nap" class="appearance-none size-4 rounded bg-gray-200 checked:bg-black">
                     <label>Take a nap</label>
                 </li>    
                 <li>
-                    <input type="checkbox" id="netflix">
+                    <input type="checkbox" id="netflix" class="appearance-none size-4 rounded bg-gray-200 checked:bg-black">
                     <label>Netflix and chill</label>
                 </li>    
                 <li>
-                    <input type="checkbox" id="lunch">
+                    <input type="checkbox" id="lunch" class="appearance-none size-4 rounded bg-gray-200 checked:bg-black">
                     <label>Go out for lunch</label>
                 </li>    
             </ul>
-            </section>
 
-            <section>
-                <h3>Completed tasks</h3>
+
+            <section class=" mt-7">
+                <h3 class="text-2xl font-semibold mb-4">Completed tasks</h3>
                 <ul>
                     <li>Read a book</li>
                     <li>Finish chores</li>
                 </ul>
             </section>
+            </section>
+
+            
         </form>
     </main>
 </body>
