@@ -6,15 +6,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title></title>
 </head>
-<body class="bg-[url('./checkers.jpeg')] bg-cover bg-center flex justify-center mt-50">
+<body class=" bg-gray-50 flex justify-center items-center min-h-screen sm:bg-red-100 md:bg-blue-100 lg:bg-orange-100">
     <main class="">
-        <section class="h-180 w-120 bg-white/20 backdrop-blur-lg shadow-lg rounded-2xl ">
-        <h1 class="text-4xl font-bold text-center py-4">To-do list</h1>
-        <form action="" id="form" class="mt-10 text-center ">
+        <section class="h-180 w-120 bg-white/20 backdrop-blur-lg shadow-lg rounded-lg max-w-md mx-auto 
+        ">
+        <h1 class="text-4xl font-bold text-center py-4 text-teal-500">To-do list</h1>
+        <form action="" id="form" class="mt-10 text-center">
 
             <div class="pb-3">
                 <label for="">Name</label>
-            <input type="text" class=" ml-4 border-b focus:border-b-2 focus:outline-none"><br>
+            <input type="text" class=" ml-4 border-b focus:border-b-2 focus:outline-none hover:outine-black"><br>
             <br>
             </div>
 
@@ -29,40 +30,53 @@
                 <option value="">High</option>
             </select><br><br>
 
-            <button type="submit" class="bg-red-100 h-10 w-40 rounded-2xl">Add</button>
+            <button type="submit" class="bg-teal-300 hover:bg-teal-500 focus:outline-offset-1 focus:outline-teal-800 focus:outline-2 h-10 w-40 rounded-2xl ">Add</button>
             
 
             <h3 class="mt-6 mb-4 text-2xl font-semibold ">Task List</h3>
-            <ul >
-                <li>
+            <ul  class="flex flex-col gap-2">
+                <div>
+                    <li>
                     
                         <input type="checkbox" id="walk" class="appearance-none size-4 rounded bg-gray-200 checked:bg-black">
                         <label>Take a walk</label>
                     
                 </li>
-                <li>
+                </div>
+
+                <div>
+                    <li>
                     <input type="checkbox" id="icecream" class="appearance-none size-4 rounded bg-gray-200 checked:bg-black">
                     <label>Go for icecream</label>
-                </li>    
+                </li>   
+                </div> 
 
-                <li>
+               <div>
+                 <li>
                     <input type="checkbox" id="nap" class="appearance-none size-4 rounded bg-gray-200 checked:bg-black">
                     <label>Take a nap</label>
-                </li>    
-                <li>
+                </li>   
+               </div> 
+
+                <div>
+                    <li>
                     <input type="checkbox" id="netflix" class="appearance-none size-4 rounded bg-gray-200 checked:bg-black">
                     <label>Netflix and chill</label>
-                </li>    
-                <li>
+                </li> 
+                </div> 
+
+                <div>
+                    <li>
                     <input type="checkbox" id="lunch" class="appearance-none size-4 rounded bg-gray-200 checked:bg-black">
                     <label>Go out for lunch</label>
-                </li>    
+                </li> 
+                </div>   
             </ul>
 
 
-            <section class=" mt-7">
+            <section class=" mt-7 ">
                 <h3 class="text-2xl font-semibold mb-4">Completed tasks</h3>
-                <ul>
+                <ul class="line-through text-gray-500">
                     <li>Read a book</li>
                     <li>Finish chores</li>
                 </ul>
